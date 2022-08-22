@@ -29,18 +29,47 @@
         }
     </style>
     
-    <script>
-        function obtermedia(){
-            var a = parseInt(document.getElementById("a").value);
-            var a = parseInt(document.getElementById("b").value);
-            var a = parseInt(document.getElementById("c").value);
-        }
+    
 
-        var media = (a + b+ c) / 3;
-        document.getElementById("resultado").innerHTML = "Resultado:" +media;
+<script>
 
-        console.log(a + b + c);
- 
-    </script>
+function calculoMedia( notas ) {
+    
+      
+    var soma = 0
+    for ( c = 0; c < notas.length; c++) {
+      soma += notas[c];
+
+}
+    
+    media = soma / notas.length;
+    return media;
+}
+
+function aprovação(media){
+
+let condicao = media >= 7 ? "aprovado" : "Reprovado"
+
+return condicao;
+
+} 
+// console.log
+console.log("Média= "+calcularMedia([8,8]))
+console.log(aprovacao(calcularMedia([8,8])))
+
+
+
+console.log(aprovacao(calcularMedia([8,8,10])))
+console.log("Média"+calcularMedia([8,8,10]))
+
+
+
+
+console.log("Média"+calcularMedia([9,6]))
+console.log(aprovacaocalcularMedia([9,6]))
+
+
+</script>
+
 </body>
 </html>
