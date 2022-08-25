@@ -4,6 +4,7 @@
 1. Resolva as operações
 
 10 + 15 = 25 (number)
+
 "10" + 2 = "102" (string)
 "10" * 2 = 20 (number)
 "10" \ 3 = 3.3333333 (float)
